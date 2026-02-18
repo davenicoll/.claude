@@ -8,3 +8,8 @@ This repo is symlinked to `~/.claude` and contains user-level Claude Code config
 - `settings.local.json` - Local machine-specific overrides (priority 3, gitignored)
 - `agents/` - Custom agent definitions
 - `commands/` - Custom slash commands
+
+## Git rules
+
+- **Never `git push` to remote without first running `/clean-settings`** to ensure `settings.json` does not contain sensitive or machine-specific data that belongs in `settings.local.json`.
+
