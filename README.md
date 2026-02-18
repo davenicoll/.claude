@@ -17,7 +17,7 @@ git clone https://github.com/davenicoll/claude.git
 rm -rf ~/.claude
 
 # Create symlink from this repo to ~/.claude
-ln -s /Users/dave.nicoll/Source/davenicoll/claude ~/.claude
+ln -s /Users/[username]/Source/davenicoll/claude ~/.claude
 ```
 
 ### 3. Verify the symlink
@@ -65,28 +65,3 @@ Settings are loaded in the following order, with higher priority files overridin
 | 3 | Local (`.claude/settings.local.json`) | Personal project overrides (gitignored) |
 | 4 | Project (`.claude/settings.json`) | Team-shared settings (committed to git) |
 | 5 (lowest) | User (`~/.claude/settings.json`) | Personal global defaults |
-
-## Updating Configuration
-
-After making changes to your configuration:
-
-```bash
-cd ~/.claude
-git add .
-git commit -m "Update Claude configuration"
-git push
-```
-
-## Syncing on Another Machine
-
-To sync your configuration on another machine:
-
-```bash
-cd ~/.claude
-git pull
-```
-
-## Notes
-
-- Make sure Claude has proper permissions to read the symlinked directory
-- Restart Claude after major configuration changes
