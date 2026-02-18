@@ -1,0 +1,58 @@
+# macOS
+.DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Claude Code internals
+.claude/
+.claude/**
+history.jsonl
+cache/
+cache/**
+debug/
+debug/**
+file-history/
+file-history/**
+ide/
+ide/**
+paste-cache/
+paste-cache/**
+plans/
+plans/**
+projects/
+projects/**
+session-env/
+session-env/**
+shell-snapshots/
+shell-snapshots/**
+statsig/
+statsig/**
+stats-cache.json
+settings.json
+tasks/
+tasks/**
+telemetry/
+telemetry/**
+todos/
+todos/**
