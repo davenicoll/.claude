@@ -49,7 +49,6 @@ shell-snapshots/**
 statsig/
 statsig/**
 stats-cache.json
-settings.json
 tasks/
 tasks/**
 telemetry/
