@@ -56,3 +56,5 @@ telemetry/
 telemetry/**
 todos/
 todos/**
+backups/
+backups/**
