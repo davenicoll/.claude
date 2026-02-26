@@ -3,22 +3,16 @@
     "allow": [
       "WebSearch",
       "WebFetch",
-
       "mcp__ado__*",
-
       "mcp__atlassian__getAccessibleAtlassianResources",
       "mcp__atlassian__getVisibleJiraProjects",
-
       "mcp__github__get_*",
       "mcp__github__list_*",
       "mcp__github__search_*",
       "mcp__github__*_read",
       "mcp__github__pull_request_review_write",
-
       "mcp__google-keep-mcp__*",
-
       "mcp__raindrop__*",
-
       "Bash(aws * list-*)",
       "Bash(aws * get-*)",
       "Bash(aws * describe-*)",
@@ -30,7 +24,6 @@
       "Bash(aws * validate-*)",
       "Bash(aws * check-*)",
       "Bash(aws * select-*)",
-
       "Bash(az * list)",
       "Bash(az * list:*)",
       "Bash(az * show)",
@@ -39,7 +32,6 @@
       "Bash(az * check-*)",
       "Bash(az * validate:*)",
       "Bash(az * exists:*)",
-
       "Bash(ls)",
       "Bash(ls:*)",
       "Bash(pwd)",
@@ -61,7 +53,6 @@
       "Bash(md5sum:*)",
       "Bash(shasum:*)",
       "Bash(sha256sum:*)",
-
       "Bash(cat:*)",
       "Bash(head:*)",
       "Bash(tail:*)",
@@ -88,7 +79,6 @@
       "Bash(rev:*)",
       "Bash(expand:*)",
       "Bash(fold:*)",
-
       "Bash(echo:*)",
       "Bash(printf:*)",
       "Bash(test:*)",
@@ -98,7 +88,6 @@
       "Bash(seq:*)",
       "Bash(expr:*)",
       "Bash(bc:*)",
-
       "Bash(uname)",
       "Bash(uname:*)",
       "Bash(hostname)",
@@ -128,7 +117,6 @@
       "Bash(type:*)",
       "Bash(command -v:*)",
       "Bash(man:*)",
-
       "Bash(ps)",
       "Bash(ps:*)",
       "Bash(lsof)",
@@ -140,7 +128,6 @@
       "Bash(vmstat:*)",
       "Bash(free:*)",
       "Bash(nproc)",
-
       "Bash(ping:*)",
       "Bash(curl:*)",
       "Bash(wget:*)",
@@ -158,7 +145,6 @@
       "Bash(mtr:*)",
       "Bash(whois:*)",
       "Bash(nc:*)",
-
       "Bash(git status)",
       "Bash(git status:*)",
       "Bash(git log)",
@@ -210,7 +196,6 @@
       "Bash(gh api:*)",
       "Bash(gh auth status)",
       "Bash(gh auth status:*)",
-
       "Bash(docker ps)",
       "Bash(docker ps:*)",
       "Bash(docker images)",
@@ -229,7 +214,6 @@
       "Bash(docker compose ps:*)",
       "Bash(docker compose logs:*)",
       "Bash(docker compose config:*)",
-
       "Bash(kubectl get:*)",
       "Bash(kubectl describe:*)",
       "Bash(kubectl logs:*)",
@@ -244,7 +228,6 @@
       "Bash(kubectl api-resources)",
       "Bash(kubectl api-resources:*)",
       "Bash(kubectl explain:*)",
-
       "Bash(terraform version)",
       "Bash(terraform show:*)",
       "Bash(terraform state list:*)",
@@ -257,7 +240,6 @@
       "Bash(terraform validate:*)",
       "Bash(terraform fmt -check:*)",
       "Bash(terraform workspace list)",
-
       "Bash(node --version)",
       "Bash(node -v)",
       "Bash(node -e:*)",
@@ -280,7 +262,6 @@
       "Bash(pnpm --version)",
       "Bash(pnpm list:*)",
       "Bash(bun --version)",
-
       "Bash(python --version)",
       "Bash(python -V)",
       "Bash(python -c:*)",
@@ -297,6 +278,8 @@
       "Bash(pip3 show:*)",
       "Bash(pip3 freeze)",
       "Bash(pip3 freeze:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
       "Bash(pipenv --version)",
       "Bash(poetry --version)",
       "Bash(poetry show:*)",
@@ -311,24 +294,41 @@
       "Bash(uv tool list)",
       "Bash(uv tree)",
       "Bash(uv tree:*)",
-
+      "Bash(uv run:*)",
+      "Bash(uv sync)",
+      "Bash(uv sync:*)",
+      "Bash(uv add:*)",
+      "Bash(uv lock)",
+      "Bash(uv lock:*)",
+      "Bash(uv pip compile:*)",
+      "Bash(uv venv)",
+      "Bash(uv venv:*)",
+      "Bash(uv init:*)",
+      "Bash(uv export:*)",
       "Bash(ruby --version)",
       "Bash(ruby -v)",
       "Bash(gem list:*)",
       "Bash(gem info:*)",
       "Bash(bundle list)",
       "Bash(bundle show:*)",
-
       "Bash(go version)",
       "Bash(go list:*)",
       "Bash(go env)",
       "Bash(go env:*)",
       "Bash(go doc:*)",
-
+      "Bash(go build:*)",
+      "Bash(go run:*)",
+      "Bash(go test:*)",
+      "Bash(go mod:*)",
+      "Bash(go generate:*)",
+      "Bash(go get:*)",
+      "Bash(go fmt:*)",
+      "Bash(go vet:*)",
+      "Bash(go tool:*)",
+      "Bash(go work:*)",
       "Bash(rustc --version)",
       "Bash(cargo --version)",
       "Bash(cargo tree:*)",
-
       "Bash(java --version)",
       "Bash(java -version)",
       "Bash(javac --version)",
@@ -337,12 +337,10 @@
       "Bash(mvn -v)",
       "Bash(gradle --version)",
       "Bash(gradle -v)",
-
       "Bash(dotnet --version)",
       "Bash(dotnet --list-sdks)",
       "Bash(dotnet --list-runtimes)",
       "Bash(dotnet --info)",
-
       "Bash(brew list)",
       "Bash(brew list:*)",
       "Bash(brew info:*)",
@@ -365,6 +363,9 @@
       "Bash(rpm -ql:*)"
     ],
     "deny": [],
+    "additionalDirectories": [
+      "/Users/dave/Source"
+    ],
     "ask": [
       "Bash(rm:*)",
       "Bash(rmdir:*)",
@@ -375,7 +376,22 @@
       "Bash(chown:*)",
       "Bash(sudo:*)",
       "Bash(fdisk:*)",
-      "Bash(dd:*)"
+      "Bash(dd:*)",
+      "Bash(go install:*)",
+      "Bash(go clean:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(pip uninstall:*)",
+      "Bash(pip3 uninstall:*)",
+      "Bash(uv pip install:*)",
+      "Bash(uv pip uninstall:*)",
+      "Bash(uv remove:*)",
+      "Bash(uv cache clean)",
+      "Bash(uv cache clean:*)",
+      "Bash(uv python install:*)",
+      "Bash(uv python uninstall:*)",
+      "Bash(uv tool install:*)",
+      "Bash(uv tool uninstall:*)"
     ]
   },
   "alwaysThinkingEnabled": true,
